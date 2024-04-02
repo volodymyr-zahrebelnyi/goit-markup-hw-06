@@ -175,25 +175,16 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  /* gap: 24px; */
+
   gap: 72px;
 }
 
 .advantages-item {
-  /* width: calc((100% - 3 * 24px) / 4); */
   width: 100%;
 }
 
 .advantages-icons-container {
-  display: flex;
   display: none;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  background-color: #f4f4fd;
-  margin-bottom: 8px;
 }
 
 .advantages-icons {
@@ -201,10 +192,6 @@ ul {
 }
 
 .advantages-list-title {
-  /* font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em; */
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -860,6 +847,16 @@ ul {
   .header-address-link:focus {
     color: #404bbf;
   }
+
+  .advantages-container {
+    /* padding-top: 96px;
+    padding-bottom: 96px; */
+    gap: 72px 24px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 1 * 24px) / 2);
+  }
 }
 
 /* ================================================= DESKTOP 👇 ========================================= */
@@ -883,5 +880,40 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+  }
+
+  .advantages {
+    /* padding: 120px 0; */
+    /* padding: 96px 16px; */
+  }
+
+  .advantages-container {
+    gap: 24px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 3 * 24px) / 4);
+  }
+
+  .advantages-icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+  }
+
+  .advantages-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .advantages-list-text {
+    font-weight: 400;
   }
 }
