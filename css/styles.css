@@ -1176,4 +1176,11 @@ ul {
   .portfolio-item {
     width: calc((100% - 24px * 2) / 3);
   }
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
 }
